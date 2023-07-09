@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'DM Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'EB Garamond', serif;
+}
+
+.tab_wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tab_wrap {
+	padding: 50px;
+	background: linear-gradient(96.49deg, #F16262 0%, #3200FF 102.71%);
+	border-radius: 6px;
+	overflow: hidden;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 15px;
+}
+
+.nav button {
+	padding: 20px 20px 27px 20px;
+	font-size: 23px;
+	font-weight: 500;
+	line-height: 36px;
+	display: block;
+	font-family: 'EB Garamond', serif;
+	text-align: left;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff !important;
+}
+
+.nav button.active {
+	background-color: #000000 !important;
+	border-bottom: transparent !important;
+}
+
+.tab_content img {
+    width: 300px;
+    margin-right: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+.tab_content h3 {
+	font-size: 33px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.tab_content p {
+	font-size: 15px;
+	color: #ffffff;
+	margin: 25px 0 0 0;
+}
+
+.tab_content ul {
+    list-style: none;
+    margin: 25px 0 0 0;
+}
+
+.tab_content ul li {
+	font-size: 15px;
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+
+.tab_content ul li i {
+	font-size: 13px;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.tab_content a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    transition: .3s;
+    margin-top: 20px;
+    display: block;
+}
+
+.tab_content a:hover {
+	color: #000000;
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1399px){
+	
+}
+@media (min-width: 1400px) { 
+	
+}
+@media (min-width: 1200px) { 
+
+}
+
+@media (max-width: 1199px) { 
+	.tab_wrapper {
+		height: auto;
+	}
+
+	.tab_wrap {
+		margin: 40px 15px;
+	}
+}
+
+@media (max-width: 991px) {
+	
+	.tab_content {
+		margin-top: 30px;
+	}
+
+
+}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767px) {
+	.tab_content {
+		flex-direction: column;
+	}
+
+	.tab_content h3 {
+		margin-top: 30px;
+	}
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {
+	
+	.tab_wrap {
+	    padding: 30px;
+	}
+
+	.nav button {
+	    padding: 15px 20px 22px 20px;
+	    font-size: 20px;
+	}
+
+}
+
+
